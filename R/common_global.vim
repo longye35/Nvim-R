@@ -3792,7 +3792,6 @@ function WaitRCompletion()
         if has('nvim-0.5.0') || has('patch-8.2.84')
             return s:compl_menu
         elseif has('nvim-0.4.3') || has('patch-8.1.1705')
-            " They have float window, but 'user_data' must be string
             let s:user_data = {}
             for item in s:compl_menu
                 let wrd = item['word']
